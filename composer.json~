@@ -1,0 +1,34 @@
+{
+    "description": "Ads Cottage an copyright project work",
+    "name": "pachoriya/adscottage",
+    "type": "project",
+    "homepage": "http://www.adscottage.com",
+    "license": "proprietary",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "AdsCottage\\Entity\\": "application/models/entities/",
+            "AdsCottage\\Repository\\": "application/models/repositories/",
+            "AdsCottage\\": "application/src/",
+            "AdsCottage\\Util\\": "application/src/util/",
+            "AdsCottage\\Common\\": "application/src/common/",
+        }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "AdsCottage\\Tests\\": "application/tests/"
+      }
+    },
+    "require": {
+        "doctrine/common": "2.4.*",
+        "doctrine/dbal": "2.4.*",
+        "doctrine/orm": "2.4.*",
+        "phpunit/phpunit": "4.3.*",
+        "phpunit/dbunit": ">=1.2",
+        "jms/serializer-bundle": "*",
+        "simplesamlphp/simplesamlphp": "dev-master",
+        "vlucas/phpdotenv": "^2.0",
+        "aws/aws-sdk-php": "^3.9",
+        "kenjis/codeigniter-ss-twig": "^0.1.0"
+    }
+}

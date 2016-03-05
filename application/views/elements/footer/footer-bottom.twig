@@ -1,0 +1,17 @@
+<footer id="footer-block" class="footer-bottom">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                Copyright &copy; 2016
+                <a href="http://www.itsetu.com" target="_blank" > ITSetu Media Lab Pvt. Ltd.</a>. All Rights Reserved.
+            </div>
+            <div class="col-sm-6">
+                <ul class="list-inline pull-right">
+                    {% for link in appFooterLinks %}
+                        <li><a href="{{ link.url }}" >{{ link.display }} </a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

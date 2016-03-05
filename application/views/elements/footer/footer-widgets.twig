@@ -1,0 +1,22 @@
+{% for widget in widgetLinks %}
+    {{ widget }}
+    {{ widget.display }}
+{% endfor %}
+<section id="widgets" class="widgets-block">
+    <div class="container-fluid">
+        <div class="row">
+            {% for widget in appWidgetLinks %}
+            <div class="col-md-3 col-sm-6">
+                <div class="widget">
+                    <h3>{{ widget.display }}</h3>
+                    <ul>
+                        {% for item in  widget.value %}
+                            <li><a href="{{ item.url }}">{{ item.display }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

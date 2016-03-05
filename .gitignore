@@ -1,0 +1,9 @@
+doc/*
+logs/*
+tmp/*
+upload/*
+user_guide/*
+vendor/*
+cache/*
+.idea/*
+.env

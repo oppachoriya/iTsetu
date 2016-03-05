@@ -1,0 +1,16 @@
+<section id="footer-social" class="footer-bottom">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            Newsletter
+        </div>
+        <div class="col-sm-6">
+            <ul class="list-inline pull-right">
+                {% for link in appFooterLinks %}
+                    <li><a href="{{ link.url }}" >{{ link.display }} </a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
